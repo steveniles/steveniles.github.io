@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.steveniles.ca</title>
+    <style>
+        html {
+            background: url(background.jpg) no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+        }
+        
+        body {
+            color: rgba(0, 0, 0, 0.25);
+            display: flex;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            font-size: 14px;
+            height: 100%;
+            margin: 0;
+        }
+        
+        main {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+            margin: auto;
+            padding: 16px;
+        }
+        
+        img {
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            float: right;
+        }
+        
+        ul {
+            line-height: 24px;
+            list-style-type: none;
+            margin: 0;
+        }
+        
+        a {
+            color: #3F7FFF
+        }
+        
+        .key {
+            color: rgba(0, 0, 0, 0.5)
+        }
+        
+        .value {
+            color: #000
+        }
+        
+        ::selection {
+            background: #BFDFFF
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <img src="profile.jpg" width="128" height="128" alt="profile picture">
+        <div>{
+            <ul>
+                <li>"<span class="key">Overview</span>": {
+                    <ul>
+                        <li>"<span class="key">Name</span>": "<span class="value">Niles, Steven</span>",</li>
+                        <li>"<span class="key">Alias</span>": "<span class="value">Jargon</span>",</li>
+                        <li>"<span class="key">Class</span>": "<span class="value">Geek</span>",</li>
+                        <li>"<span class="key">Profession</span>": "<span class="value">Software Developer</span>",</li>
+                        <li>"<span class="key">Location</span>": "<span class="value">Toronto, ON</span>",</li>
+                        <li>"<span class="key">Origin</span>": "<span class="value">St. Catharines, ON</span>",</li>
+                        <li>"<span class="key">Contact</span>": "<a href="mailto:steve.niles@gmail.com">steve.niles@gmail.com</a>"</li>
+                    </ul>},
+                </li>
+                <li>"<span class="key">Work &amp; Education</span>": {
+                    <ul>
+                        <li>"<span class="key">Company</span>": "<span class="value">MRI Software</span>",</li>
+                        <li>"<span class="key">Bachelor's Degree</span>": "<span class="value">Computer Science, Brock University</span>",</li>
+                        <li>"<span class="key">College Diploma</span>": "<span class="value">Computer Programmer Analyst, Niagara College</span>"</li>
+                    </ul>},
+                </li>
+                <li>"<span class="key">Other Profiles</span>": [
+                    <ul>
+                        <li>"<a href="https://plus.google.com/u/0/117377626741909928162/about">Google+</a>",</li>
+                        <li>"<a href="https://github.com/steveniles">GitHub</a>",</li>
+                        <li>"<a href="http://stackoverflow.com/users/1786847/jargon?tab=profile">Stack Overflow</a>",</li>
+                        <li>"<a href="https://app.pluralsight.com/profile/steveniles">Pluralsight</a>"</li>
+                    </ul>]
+                </li>
+            </ul>}
+        </div>
+    </main>
+</body>
+
+</html>
