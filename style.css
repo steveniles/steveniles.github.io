@@ -29,14 +29,14 @@ ul {
     margin: 0;
 }
 a {
-    color: #3F7FFF
+    color: #3F7FFF;
 }
 .key {
-    color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5);
 }
 .value {
-    color: #000
+    color: #000;
 }
 ::selection {
-    background: #BFDFFF
+    background: #BFDFFF;
 }
