@@ -23,8 +23,14 @@ img {
     border: 1px solid #4000ff;
     float: right;
     height: 128px;
+    transform: none;
+    transition: transform 200ms;
     user-select: none;
     width: 128px;
+}
+
+img:hover {
+    transform: scale(1.5, 1.5) rotate(5deg) translate(24px, -24px);
 }
 
 ul {
@@ -36,6 +42,11 @@ ul {
 a {
     color: #7598ff;
     text-decoration: none;
+    transition: color 200ms;
+}
+
+a:hover {
+    color: #00ffbf;
 }
 
 a:active {
