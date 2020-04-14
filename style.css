@@ -1,56 +1,60 @@
-html {
-    background-color: #808080;
-    height: 100%;
-}
-
 body {
-    color: #808080;
+    background: #808080;
+    color: #6040bf80;
     display: flex;
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    height: 100%;
+    font: 16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    height: 100vh;
     margin: 0;
 }
 
 main {
-    background-color: #212040;
-    border-radius: 8px;
-    border: 1px solid #0e00ff;
-    box-shadow: 4px 8px 24px #404040;
+    background: linear-gradient(165deg, #1a0066, #0d0033, #06001a);
+    border-radius: 16px;
+    border: 1px solid #4000ff;
+    box-shadow: 4px 8px 16px #00000080;
+    box-sizing: border-box;
     margin: auto;
     padding: 16px;
-    width: 440px;
+    width: 480px;
 }
 
 img {
     border-radius: 8px;
-    border: 1px solid #0e00ff;
+    border: 1px solid #4000ff;
     float: right;
+    height: 128px;
     user-select: none;
+    width: 128px;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
-    padding-left: 20px;
+    padding: 0 0 0 16px;
 }
 
 a {
-    color: #00b1ff;
+    color: #7598ff;
+    text-decoration: none;
 }
 
 a:active {
-    color: #0e00ff;
+    color: #4000ff;
 }
 
 .key {
-    color: #bf80ff;
+    color: #bf7aff;
 }
 
 .value {
-    color: #5aff91;
+    color: #00ffbf;
 }
 
 ::selection {
-    background: #0e00ff;
+    background: #00ffbf40;
+}
+
+a::selection, .key::selection, .value::selection {
+    background: #00ffbf;
+    color: #4000ff;
 }
