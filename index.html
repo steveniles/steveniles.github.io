@@ -109,7 +109,12 @@
 
     <body>
         <main>
-            <img src="images/profile.jpg" alt="profile picture">
+            <picture>
+                <!-- jpeg fallback just because Apple's browser can't modern web:P -->
+                <source srcset="images/profile.webp" type="image/webp">
+                <img src="images/profile.jpg" alt="profile picture">
+            </picture>
+
             <div>{
                 <ul>
                     <li>"<span class="key">Overview</span>": {
