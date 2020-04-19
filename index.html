@@ -9,13 +9,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto&family=Ubuntu+Mono:wght@700" rel="stylesheet">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <style>
+            * {
+                box-sizing: border-box;
+            }
+
             body {
                 background: #808080;
                 color: #6040bf60;
                 display: flex;
                 font: 16px 'Roboto', sans-serif;
-                height: 100vh;
                 margin: 0;
+                min-height: 100vh;
+                padding: 16px;
             }
 
             main {
@@ -23,11 +28,10 @@
                 border-radius: 16px;
                 border: 1px solid #4000ff;
                 box-shadow: 4px 8px 16px #00000080;
-                box-sizing: border-box;
                 margin: auto;
+                min-height: 302px;
                 padding: 16px;
                 width: 480px;
-                height: 302px;
             }
 
             img {
