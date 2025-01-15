@@ -1,20 +1,20 @@
 # Steve Niles - Senior Enterprise Software Developer
 Toronto, Ontario, Canada  
 steve.niles@gmail.com  
-https://www.steveniles.dev  
 
 I am a life-long programmer with over a decade of professional experience working primarily on web-based enterprise software-as-a-service across multiple industries, from real estate management to precision agriculture, digital media distribution, and more.
 
-I work full-stack, from back-end database and code to front-end functionality and design. My top priority is building systems that stand the test of time, focusing on quality, extensibility, and maintainability.
+I enjoy working with a team on both high-level architecture and implementation, as well as testing and documentation. I work full-stack, from back-end database and code to front-end functionality and design. I also have prior experience building desktop applications (mostly in the WinForms era).
 
-I'm not a "move fast and break things" developer; I prefer being part of a team that takes a more thoughtful and deliberate approach to architecture and implementation, aiming to avoid the most common pitfalls that deteriorate a software system's long-term health.
+My passion is for creating healthy, long-lasting software systems. Quality craftsmanship is very important to me. I have been on a personally funded sabbatical for over a year, and am looking for a new endeavor with a team that also feels strongly about building great software that stands the test of time.
 
 ## Tech Stack Highlights
 ### Recent
 - Web front and back end, libraries
 - C# / .NET
+- ASP.NET, OrmLite, Dapper
 - JavaScript, React, HTML, CSS
-- SQL Server, MongoDB
+- SQL Server, MongoDB, RabbitMQ
 - Git, Github
 ### Previous
 - Desktop applications (DOS & Windows)
