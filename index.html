@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Resume - Steve Niles">
@@ -13,171 +13,162 @@
     <link rel="icon" type="image/png" sizes="256x256" href="images/favicons/256.png">
     <link rel="icon" type="image/png" sizes="512x512" href="images/favicons/512.png">
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        ::selection {
-            background: #7598ff;
-            color: #FFF;
-        }
+      ::selection {
+        background: #7598ff;
+        color: #FFF;
+      }
 
-        body {
-            background: #808080;
-            color: #FFF;
-            display: flex;
-            font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.5;
-            margin: 0;
-            min-height: 100vh;
-            padding: 16px;
-        }
+      body {
+        background: #808080;
+        color: #FFF;
+        display: flex;
+        font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        min-height: 100vh;
+        padding: 16px;
+      }
 
-        .container {
-            margin: auto;
-            max-width: 1024px;
-        }
+      .container {
+        margin: auto;
+        max-width: 1024px;
+      }
 
-        main {
-            background: linear-gradient(165deg, #1a0066, #0d0033, #06001a);
-            border-radius: 16px;
-            border: 1px solid #7598ff80;
-            box-shadow: 4px 8px 16px #00000040;
-            padding: 32px 32px 16px;
-        }
+      main {
+        background: linear-gradient(165deg, #1a0066, #0d0033, #06001a);
+        border-radius: 16px;
+        border: 1px solid #7598ff80;
+        box-shadow: 4px 8px 16px #00000040;
+        padding: 32px 32px 16px;
+      }
 
-        img {
-            border-radius: 8px;
-            border: 1px solid #7598ff80;
-            float: right;
-            height: 130px;
-            transform: none;
-            transition: transform 200ms;
-            user-select: none;
-            width: 130px;
-        }
+      img {
+        border-radius: 8px;
+        border: 1px solid #7598ff80;
+        float: right;
+        height: 130px;
+        transform: none;
+        transition: transform 200ms;
+        user-select: none;
+        width: 130px;
+      }
 
-        img:hover {
-            transform: scale(1.5, 1.5) rotate(5deg) translate(24px, -24px);
-        }
+      img:hover {
+        transform: scale(1.5, 1.5) rotate(5deg) translate(24px, -24px);
+      }
 
-        h1 {
-            border-bottom: 1px solid #7598ff80;
-            color: #7598ff;
-            margin: 0;
-        }
+      h1 {
+        border-bottom: 1px solid #7598ff80;
+        color: #7598ff;
+        margin: 0;
+      }
 
-        h1 strong {
-            color: #00ffbf;
-            font-weight: 800;
-        }
+      h1 strong {
+        color: #00ffbf;
+        font-weight: 800;
+      }
 
-        h2 {
-            border-bottom: 1px solid #7598ff80;
-            color: #00ffbf;
-            margin: 16px 0;
-        }
+      h2 {
+        border-bottom: 1px solid #7598ff80;
+        color: #00ffbf;
+        margin: 16px 0;
+      }
 
-        a {
-            color: #7598ff;
-            text-decoration: none;
-            transition: color 200ms;
-        }
+      a {
+        color: #7598ff;
+        text-decoration: none;
+        transition: color 200ms;
+      }
 
-        a:hover {
-            color: #bf7aff;
-        }
+      a:hover {
+        color: #bf7aff;
+      }
 
-        a:active {
-            color: #4000ff;
-        }
+      a:active {
+        color: #4000ff;
+      }
 
-        ul {
-            padding-left: 32px;
-        }
+      ul {
+        padding-left: 32px;
+      }
 
-        time {
-            color: #bf7aff;
-        }
+      time {
+        color: #bf7aff;
+      }
 
-        footer {
-            text-align: right;
+      footer {
+        text-align: right;
+      }
 
-        }
+      footer a {
+        color: #000;
+        font-weight: 600;
+        margin: 0 16px;
+      }
 
-        footer a {
-            color: #000;
-            font-weight: 600;
-            margin: 0 16px;
-        }
-
-        footer a:hover {
-            color: #4000ff;
-        }
+      footer a:hover {
+        color: #4000ff;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <main>
-            <img src="images/profile.png" alt="profile picture">
-            <h1><strong>Steve Niles</strong><br>Senior Software Developer</h1>
-            <p>
-                Toronto, Ontario, Canada<br>
-                <a href="mailto:steve.niles@gmail.com">steve.niles@gmail.com</a><br>
-            </p>
-            <p>I am a life-long programmer with over a decade of professional experience working primarily on web-based enterprise software-as-a-service across multiple industries, from real estate management to precision agriculture, digital media distribution, and more.</p>
-            <p>I enjoy working with a team on both high-level architecture and implementation, as well as testing and documentation. I work full-stack, from back-end database and code to front-end functionality and design. I also have prior experience building desktop applications (mostly in the WinForms era).</p>
-            <p>My passion is for creating healthy, long-lasting software systems. Quality craftsmanship is very important to me. I have been on a personally funded sabbatical for over a year, and am looking for a new endeavor with a team that also feels strongly about building great software that stands the test of time.</p>
-            <h2>Tech Stack Highlights</h2>
-            <h3>Recent</h3>
-            <ul>
-                <li>Web front and back end, libraries</li>
-                <li>C# / .NET</li>
-                <li>ASP.NET, OrmLite, Dapper</li>
-                <li>JavaScript, React, HTML, CSS</li>
-                <li>SQL Server, MongoDB, RabbitMQ</li>
-                <li>Git, Github</li>
-            </ul>
-            <h3>Previous</h3>
-            <ul>
-                <li>Desktop applications (DOS & Windows)</li>
-                <li>C++, Java, PHP, QBasic & Visual Basic</li>
-                <li>AngularJS, jQuery</li>
-                <li>Postgres</li>
-                <li>Team Foundation Version Control</li>
-            </ul>
-            <h2>Recent Work Experience</h2>
-            <h3>As Full-Time Developer</h3>
-            <ul>
-                <li><a href="https://www.method.me" target="_blank">Method</a> Customer Relationship Management Platform (<time>2021</time>-<time>2023</time>)</li>
-                <li><a href="https://yangaroo.com" target="_blank">Yangaroo</a> Digital Media Distribution System (<time>2019</time>-<time>2021</time>)</li>
-                <li><a href="https://www.mrisoftware.com" target="_blank">MRI</a> Real Estate Software (<time>2013</time>-<time>2019</time>)</li>
-            </ul>
-            <p>Responsibilities included recommending, architecting, implementing, and documenting new features, as well as maintaining existing ones; Creating and supporting unit and integration tests; Mentoring junior and intermediate developers</p>
-            <h3>As Part-Time Teacher / Developer</h3>
-            <ul>
-                <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> First Year Object-Oriented Programming (<time>2013</time>)</li>
-                <li><a href="https://www.ncinnovation.ca" target="_blank">Niagara College Research & Innovation</a> (<time>2007</time>-<time>2013</time>)</li>
-            </ul>
-            <p>Roles included instructing students in GUI design and basic programming, as well as testing and grading student performance; Working on software research projects in partnership with local businesses; Personally <a href="https://steveniles.dev/encore.pdf" target="_blank">presenting software projects</a> at press conferences, trade shows, and to King Charles III, then Prince of Wales</p>
-            <h2>Education</h2>
-            <ul>
-                <li><a href="https://brocku.ca" target="_blank">Brock University</a> - Honours BSc in Computer Science (<time>2013</time>)</li>
-                <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> - Computer Programmer Analyst Diploma (<time>2009</time>)</li>
-            </ul>
-            <p>Favorite courses include Artificial Intelligence, Discrete Optimization, and Compiler Construction</p>
-            <h2>Open Source</h2>
-            <ul>
-                <li><a href="https://github.com/dotnet/roslyn/pull/8195" target="_blank">Visual Studio / Dotnet Roslyn</a> - Found and fixed a bug in the static analysis code of Microsoft's .NET Compiler Platform</li>
-                <li><a href="https://github.com/steveniles/MandelZoom" target="_blank">MandelZoom</a> - Mandelbrot set screensaver with technical guide on screensaver programming and GDI+ image processing details</li>
-            </ul>
-        </main>
-        <footer>
-            <a href="resume.md">View As Markdown</a>
-            <a href="resume.pdf">View As PDF</a>
-        </footer>
+      <main>
+        <img src="images/profile.png" alt="profile picture">
+        <h1><strong>Steve Niles</strong><br>Senior Software Developer</h1>
+        <p>
+            Toronto, Ontario, Canada<br>
+            <a href="mailto:steve.niles@gmail.com">steve.niles@gmail.com</a><br>
+            <a href="https://steveniles.dev">https://steveniles.dev</a>
+        </p>
+        <p>I have been programming as a hobby since childhood, and professionally for nearly two decades. Much of that has been building web-based enterprise software for customers across multiple industries, from real estate management to precision agriculture, digital media distribution, and more.</p>
+        <p>I work full-stack, architecting and implementing, as well as testing and documenting, from back-end code and database, to front-end functionality and design. I also have experience building traditional offline desktop applications and standalone libraries.</p>
+        <p>My passion is for creating robust, sustainable software systems, with a focus on quality craftsmanship. I have been on a personally funded sabbatical, and am looking for a new endeavor with a team that also feels strongly about building great software.</p>
+        <h2>Tech Stack Highlights</h2>
+        <ul>
+          <li>C# / .NET, Java, PHP, C++, QBasic</li>
+          <li>ASP.NET, OrmLite, Dapper</li>
+          <li>JavaScript, React, AngularJS, jQuery, HTML, CSS, Tailwind</li>
+          <li>SQL Server, MongoDB, RabbitMQ, Postgres</li>
+          <li>Git, Github, TFVC</li>
+        </ul>
+        <h2>Education</h2>
+        <ul>
+          <li><a href="https://brocku.ca" target="_blank">Brock University</a> - Honours BSc in Computer Science (<time>2013</time>)</li>
+          <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> - Computer Programmer Analyst Diploma (<time>2009</time>)</li>
+        </ul>
+        <h2>Work Experience</h2>
+        <h3>As Full-Time Developer</h3>
+        <ul>
+          <li><a href="https://www.method.me" target="_blank">Method</a> Customer Relationship Management Platform (<time>2021</time>-<time>2023</time>)</li>
+          <li><a href="https://yangaroo.com" target="_blank">Yangaroo</a> Digital Media Distribution System (<time>2019</time>-<time>2021</time>)</li>
+          <li><a href="https://www.mrisoftware.com" target="_blank">MRI</a> Real Estate Software (<time>2013</time>-<time>2019</time>)</li>
+        </ul>
+        <p>Responsibilities included recommending, architecting, implementing, and documenting new features, as well as maintaining existing ones; Creating and supporting unit and integration tests; Mentoring junior and intermediate developers</p>
+        <h3>As Part-Time Teacher / Developer</h3>
+        <ul>
+          <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> First Year Object-Oriented Programming (<time>2013</time>)</li>
+          <li><a href="https://www.ncinnovation.ca" target="_blank">Niagara College Research & Innovation</a> (<time>2007</time>-<time>2013</time>)</li>
+        </ul>
+        <p>Roles included instructing students in GUI design and basic programming, as well as testing and grading student performance; Working on software research projects in partnership with local businesses; Personally <a href="https://steveniles.dev/encore.pdf" target="_blank">presenting software projects</a> at press conferences, trade shows, and to King Charles III, then Prince of Wales</p>
+        <h2>Open Source / Public Projects</h2>
+        <ul>
+          <li><a href="https://github.com/dotnet/roslyn/pull/8195" target="_blank">Visual Studio / Dotnet Roslyn</a> - Found and fixed a bug in the static analysis code of Microsoft's .NET Compiler Platform</li>
+          <li><a href="https:/jargon.tools" target="_blank">Jargon Tools</a> - A website I built to play around with the latest CSS and Tailwind</li>
+          <li><a href="https://github.com/steveniles/MandelZoom" target="_blank">MandelZoom</a> - Mandelbrot Set screensaver built using WinForms and GDI+. Also includes technical guide on screensaver programming and image processing techniques</li>
+          <li><a href="https://howyoudoeverything.com" target="_blank">HowYouDoEverything.com</a> - A tiny piece of my philosophy. Call it art, but hanging on the web, not the wall</li>
+        </ul>
+      </main>
+      <footer>
+        <a href="resume.md">View As Markdown</a>
+        <a href="resume.pdf">View As PDF</a>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
