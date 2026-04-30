@@ -1,174 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Resume - Steve Niles">
-    <title>Steve Niles - Senior Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/32.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="images/favicons/64.png">
-    <link rel="icon" type="image/png" sizes="128x128" href="images/favicons/128.png">
-    <link rel="icon" type="image/png" sizes="256x256" href="images/favicons/256.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="images/favicons/512.png">
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      ::selection {
-        background: #7598ff;
-        color: #FFF;
-      }
-
-      body {
-        background: #808080;
-        color: #FFF;
-        display: flex;
-        font-family: "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin: 0;
-        min-height: 100vh;
-        padding: 16px;
-      }
-
-      .container {
-        margin: auto;
-        max-width: 1024px;
-      }
-
-      main {
-        background: linear-gradient(165deg, #1a0066, #0d0033, #06001a);
-        border-radius: 16px;
-        border: 1px solid #7598ff80;
-        box-shadow: 4px 8px 16px #00000040;
-        padding: 32px 32px 16px;
-      }
-
-      img {
-        border-radius: 8px;
-        border: 1px solid #7598ff80;
-        float: right;
-        height: 130px;
-        transform: none;
-        transition: transform 200ms;
-        user-select: none;
-        width: 130px;
-      }
-
-      img:hover {
-        transform: scale(1.5, 1.5) rotate(5deg) translate(24px, -24px);
-      }
-
-      h1 {
-        border-bottom: 1px solid #7598ff80;
-        color: #7598ff;
-        margin: 0;
-      }
-
-      h1 strong {
-        color: #00ffbf;
-        font-weight: 800;
-      }
-
-      h2 {
-        border-bottom: 1px solid #7598ff80;
-        color: #00ffbf;
-        margin: 16px 0;
-      }
-
-      a {
-        color: #7598ff;
-        text-decoration: none;
-        transition: color 200ms;
-      }
-
-      a:hover {
-        color: #bf7aff;
-      }
-
-      a:active {
-        color: #4000ff;
-      }
-
-      ul {
-        padding-left: 32px;
-      }
-
-      time {
-        color: #bf7aff;
-      }
-
-      footer {
-        text-align: right;
-      }
-
-      footer a {
-        color: #000;
-        font-weight: 600;
-        margin: 0 16px;
-      }
-
-      footer a:hover {
-        color: #4000ff;
-      }
-    </style>
+    <meta name="description" content="Toronto-based full-stack software developer">
+    <title>Steve Niles</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="profile.png">
+    <link rel="prefetch" href="philosophy.html">
+    <link rel="prefetch" href="resume.html">
+    <link rel="prefetch" href="encore.pdf">
   </head>
   <body>
     <div class="container">
+      <header>
+        <img src="profile.png" alt="profile picture of me">
+        <nav>
+          <a class="current">Story</a>
+          <a href="philosophy.html">Philosophy</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </header>
       <main>
-        <img src="images/profile.png" alt="profile picture">
-        <h1><strong>Steve Niles</strong><br>Senior Software Developer</h1>
-        <p>
-            Toronto, Ontario, Canada<br>
-            <a href="mailto:steve.niles@gmail.com">steve.niles@gmail.com</a><br>
-            <a href="https://steveniles.dev">https://steveniles.dev</a>
-        </p>
-        <p>I have been programming as a hobby since childhood, and professionally for nearly two decades. Much of that has been building web-based enterprise software for customers across multiple industries, from real estate management to precision agriculture, digital media distribution, and more.</p>
-        <p>I work full-stack, architecting and implementing, as well as testing and documenting, from back-end code and database, to front-end functionality and design. I also have experience building traditional offline desktop applications and standalone libraries.</p>
-        <p>My passion is for creating robust, sustainable software systems, with a focus on quality craftsmanship. I have been on a personally funded sabbatical, and am looking for a new endeavor with a team that also feels strongly about building great software.</p>
-        <h2>Tech Stack Highlights</h2>
-        <ul>
-          <li>C# / .NET, Java, PHP, C++, QBasic</li>
-          <li>ASP.NET, OrmLite, Dapper</li>
-          <li>JavaScript, React, AngularJS, jQuery, HTML, CSS, Tailwind</li>
-          <li>SQL Server, MongoDB, RabbitMQ, Postgres</li>
-          <li>Git, Github, TFVC</li>
-        </ul>
-        <h2>Education</h2>
-        <ul>
-          <li><a href="https://brocku.ca" target="_blank">Brock University</a> - Honours BSc in Computer Science (<time>2013</time>)</li>
-          <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> - Computer Programmer Analyst Diploma (<time>2009</time>)</li>
-        </ul>
-        <h2>Work Experience</h2>
-        <h3>As Full-Time Developer</h3>
-        <ul>
-          <li><a href="https://www.method.me" target="_blank">Method</a> Customer Relationship Management Platform (<time>2021</time>-<time>2023</time>)</li>
-          <li><a href="https://yangaroo.com" target="_blank">Yangaroo</a> Digital Media Distribution System (<time>2019</time>-<time>2021</time>)</li>
-          <li><a href="https://www.mrisoftware.com" target="_blank">MRI</a> Real Estate Software (<time>2013</time>-<time>2019</time>)</li>
-        </ul>
-        <p>Responsibilities included recommending, architecting, implementing, and documenting new features, as well as maintaining existing ones; Creating and supporting unit and integration tests; Mentoring junior and intermediate developers</p>
-        <h3>As Part-Time Teacher / Developer</h3>
-        <ul>
-          <li><a href="https://www.niagaracollege.ca" target="_blank">Niagara College</a> First Year Object-Oriented Programming (<time>2013</time>)</li>
-          <li><a href="https://www.ncinnovation.ca" target="_blank">Niagara College Research & Innovation</a> (<time>2007</time>-<time>2013</time>)</li>
-        </ul>
-        <p>Roles included instructing students in GUI design and basic programming, as well as testing and grading student performance; Working on software research projects in partnership with local businesses; Personally <a href="https://steveniles.dev/encore.pdf" target="_blank">presenting software projects</a> at press conferences, trade shows, and to King Charles III, then Prince of Wales</p>
-        <h2>Open Source / Public Projects</h2>
-        <ul>
-          <li><a href="https://github.com/dotnet/roslyn/pull/8195" target="_blank">Visual Studio / Dotnet Roslyn</a> - Found and fixed a bug in the static analysis code of Microsoft's .NET Compiler Platform</li>
-          <li><a href="https://jargon.tools" target="_blank">Jargon Tools</a> - A website I built to play around with the latest CSS and Tailwind</li>
-          <li><a href="https://github.com/steveniles/MandelZoom" target="_blank">MandelZoom</a> - Mandelbrot Set screensaver built using WinForms and GDI+. Also includes technical guide on screensaver programming and image processing techniques</li>
-          <li><a href="https://howyoudoeverything.com" target="_blank">HowYouDoEverything.com</a> - A tiny piece of my philosophy. Call it art, but hanging on the web, not the wall</li>
-        </ul>
+        <h1>Developer Story</h1>
+        <p>As a child, I spent my allowance on logic puzzle magazines from Dell & Penny Press. This was before sudoku succeeded it as the prominent deductive reasoning puzzle. I was one of those kids who liked reading about math, science, and technology. I'd get classmates to write coded messages in a substitution cipher so that I could solve them with frequency analysis. I was a bit of a nerd.</p>
+        <p>When we got our first family desktop computer, I was determined to figure out everything it could do. I would open every program installed (in Windows 3.1), look through every menu, every configuration dialog box, to learn its secrets. One day, at a local yard sale, I found a few books with titles like "Peter Norton's Assembly Language Book for the IBM PC" and "Tricks of the MS-DOS Masters". There was a picture of a wizard on the cover. I was hooked.</p>
+        <p>Before long, I was making simple COM files in Debug, the DOS hex editor (back then, a .COM was an executable file, not a website domain). From there, I started writing actual code in Batch and Basic.</p>
+        <p>My high school computer programming class introduced me to C++, where I would code up 3D tic tac toe algorithms, Matrix screen savers, and a sensor-guided navigation system for my teachers pet robot. By this time, I was also learning all about how to make a web page with HTML, CSS, and spinning wireframe crossbones animations (a necessity in the era of GeoCities and Angelfire).</p>
+        <p>After high school, I studied Computer Networking at Mohawk College, but dropped out after the first year, not sure of my direction at the time. I thought about audio engineering for a little while.</p>
+        <p>Eventually my love of programming won out, by this time mostly in C#/.NET with Niagara College's 3 year Computer Programmer/Analyst diploma program. One of my instructors recommended a placement at the college's research division (Niagara Research). working on projects in partnership with local businesses. That co-op turned into six years of working on things ranging from AutoCAD plugins to building a remote-sensing visualization and forecasting system for some of Niagara's vineyards called "PrAgMatic" (Precision Agriculture Automatic).</p>
+        <p>My time at Niagara Research was invaluable, not just architecting and building systems, but speaking about it at various trade shows, conventions, and conferences, even being <a href="encore.pdf" target="_blank">highlighted</a> in the school's publication, Encore. I also had the opportunity to make a presentation of the PrAgMatic project to Prince (now King) Charles III during his visit to our campus.</p>
+        <figure>
+          <img src="royal-visit.jpg" alt="">
+          <figcaption>Me shaking hands with at-the-time Prince Charles during a software project presentation</figcaption>
+        </figure>
+        <p>While still working at Niagara Research, I had in the meantime completed my diploma and moved on to getting my BSc in Computer Science at Brock University. This was much more high level and theory focused than the hands-on training from college, rounding out my skills and understanding.</p>
+        <p>After graduating from Brock, and a semester of teaching Object-Oriented Programming at Niagara College, I moved to Toronto to 'start' my career.</p>
+        <p>Since then, my professional experience has been predominately web-based enterprise systems, written in C# and JavaScript, across a number of industries. At MRI Software, I worked on a real-estate management platform. At Yangaroo, I helped build a digital media distribution service. At Method, I worked on enhancing the Customer Relationship Management system, and the no-code platform it was built upon.</p>
+        <p>During that time, I'd built up my skills not just in writing code, but also the various adjacent technologies, from maintaining databases to administrating virtual servers. Most importantly, I honed my understanding of the higher level concepts and abstractions that can make or break a software system over time.</p>
+        <p>After Covid, and a decade in Toronto, I started a self-funded sabbatical in 2023. Then the AI bubble came, and it became clear that there would be a renewed need for developers with an understanding of the software <a href="philosophy.html">development philosophies</a> most important in building long-lasting, high quality software...</p>
       </main>
-      <footer>
-        <a href="resume.md">View As Markdown</a>
-        <a href="resume.pdf">View As PDF</a>
-      </footer>
     </div>
   </body>
 </html>

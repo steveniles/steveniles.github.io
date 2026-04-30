@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Toronto-based full-stack software developer">
+    <title>Steve Niles</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="profile.png">
+    <link rel="prefetch" href="index.html">
+    <link rel="prefetch" href="resume.html">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="profile.png" alt="profile picture of me">
+        <nav>
+          <a href="index.html">Story</a>
+          <a class="current">Philosophy</a>
+          <a href="resume.html">Resume</a>
+        </nav>
+      </header>
+      <main>
+        <h1>Development Philosophy</h1>
+        <p>What makes for great software? There are some obvious aspects: being secure, performant, intuitive, bug-free, etc. Beyond these high level descriptors, I believe there are many aspects to how software is made that determines the quality and long-term health of any software system.</p>
+        <p>Many volumes have been written on good software, and good software development practices. This is just a quick highlight of some of the principles I've learned and valued in my years of architecting, writing, reviewing, debugging, and maintaining code, data schemas, and system design.</p>
+        <h2>Software Type</h2>
+        <p>The kind of software you're making will determine which principles matter more. For example, the kind of tight coupling you'd use in a video game to maximize framerate is often unnecessary in business software, and would actually harm the ability to maintain, modify, or enhance features there.</p>
+        <p>Another example is the Open-Closed principle in <a href="https://en.wikipedia.org/wiki/SOLID" target="_blank">SOLID</a>. This is crucial for public-facing APIs and libraries, but is largely irrelevant in closed-source systems.</p>
+        <h2>Big Picture</h2>
+        <p>While the technical side of things is the primary domain of a developer, understanding the business goals is very important.</p>
+        <p>Imagine you're building a CRM (Customer Relationship Management) system for small businesses, as a No-Code Platform. One part of this would likely involve including pre-built stock apps for the usual customer relationship management functions e.g. a Contacts List, Email Marketing, Forecasting etc.</p>
+        <p>However, as important as having these out-of-the-box features is, the success as a platform would also depend on having a full set of functions and UI elements available to any customer who is using the No-Code system to build their own apps.</p>
+        <p>It would be easy to fall into the trap of only building into the system the features and functions needed for the included stock apps. They may serve your customers well, but an anemic platform will prevent the growth from customers who want to build complicated functionality unique to their businesses needs.</p>
+        <p>Understanding business goals like this will help anticipate and plan what, and how, to develop.</p>
+        <h2>Little Details</h2>
+        <p>While making sure the big picture is covered takes priority, don't forget the little details that take a piece of software from being just usable to truly intuitive.</p>
+        <p>For example, if you have a table of data somewhere in the UI, make the columns sortable, switching from ascending or descending when the column header is clicked. Have a tiny arrow showing the current direction. Sort date columns by ISO-8601 format (YYYY-MM-DD) regardless of how the dates are displayed. If the user leaves that page, then comes back, remember how the table was last sorted.</p>
+        <p>Quality of life features make using your software a better experience for your customers. They will feel the difference, even if they don't consciously notice why.</p>
+        <h2>Iteration & Technical Debt</h2>
+        <p>When thinking about how to continue building up an application, ask yourself what the biggest current bottleneck or missing feature is. That's where you're likely to get the best ROI. Don't get trapped acting like a hill-climbing algorithm; sometimes evolution is enough, sometimes revolution is the right call.</p>
+        <p>Tech debt is not an evil thing. If it helps get the feature out the door faster, that's valuable. But, just as you wouldn't buy the new big screen TV until the car is paid off, you shouldn't start working on the next feature (possibly interacting with, or built on top of, the former) until you've gone back and finished refactoring. You always want to be building on a solid foundation.</p>
+        <p>This also means you should be aiming for no known bugs. They'll still slip through on occasion, but once you're aware of them, they should take priority. Otherwise, they will multiply, hurting the ability to maintain velocity, not to mention the system's reputation.</p>
+        <h2>Architecture & Implementation</h2>
+        <p>Use vertical structure when you can. Model abstractions accurately, while favoring simplicity. Avoid primitive obsession and other <a href="https://en.wikipedia.org/wiki/Design_smell" target="_blank">design smells.</a></p>
+        <p>Separation of concerns is important because it prevents changes, or new complexity, in one component from needing to spread to others. Avoiding tight coupling is often more important than staying DRY (Don't Repeat Yourself).</p>
+        <p>If two components happen to (currently) have the same, or similar, implementations, but serve two different purposes, leave them as separate components. The implementation is an 'implementation detail'. Only merge/extract truly general abstractions, otherwise you're likely to end up with bloated classes or methods full of conditional logic for different behaviors when serving different conceptual masters. This becomes harder and harder to maintain over time.</p>
+        <h2>Tooling & Tech Stack</h2>
+        <p>Knowing your tools and their capability can save time. Visual Studio, for example, has a lot of handy features, some of them buried in menus and dialog boxes. Likewise, knowing what functionality is included in your programming language, or base class library, will make you a more productive developer.</p>
+        <p>It is also advantageous, however, to avoid being locked into one specific system. Using portable formats e.g. plain text, markdown, json, etc. when possible can be just as valuable as knowing a specific tool's deeper features.</p>
+        <p>It's also important not to chase fads or use a certain framework just because it's the latest thing. Sometimes they are the best tool for the job; sometimes an older, established choice is the best one. Being flexible and willing to learn and use new tools when appropriate is the way.</p>
+        <h2>Documentation</h2>
+        <p>Even for strictly internal APIs, having clear, simple documentation is valuable for maintaining a system over time. Keeping the documentation close to the code can help keep it up to date, which is crucial. Having documentation does not mean that code itself shouldn't be as clear and self-documenting as possible. Choose clarity over cleverness.</p>
+        <p>This also includes naming. Classes, methods, variables, etc. should all be named according to what they do. You should be able to tell from a method name what it does, what it returns, and what, if any, side effects it has. Do not call your repository class "OrderDTO" (I've seen this happen).</p>
+        <p>Tests should also serve as a form of documentation. A unit test should be easy to read and understand, and it should make clear what is expected from the code under test.</p>
+        <h2>AI</h2>
+        <p>AI is a tool. Don't be afraid to use it, but don't abuse it. Have it double-check your work, but don't expect it to do your work for you. Understanding the code, and the system, that you create is your responsibility. If using AI increases your productivity by orders of magnitude, you're probably using it wrong i.e. it's not just doing your typing for you, it's doing your reasoning and understanding for you, and that's a recipe for bad things to happen.</p>
+        <p>Need a one-off tool to process some data internally? A situation where you can verify the result, and nothing important is in danger of being erased or corrupted? AI-generated code is probably fine here, because it's going to be thrown away one you get the output you needed.</p>
+        <h2>Process</h2>
+        <p>Having a process is good, but it comes with some danger. It's easy to fall into habit and act on autopilot, which can prevent being able to handle unexpected issues, edge cases the process didn't plan for. Sticking rigidly to the established process can often mean leaving these exceptions to solve themselves, which they usually don't. Part of having a good process means recognizing when it needs to be updated, adapting to account for new information or occurrences. Treat process as an augmentation, not a crutch.</p>
+        <p><a href="https://howyoudoeverything.com" target="_blank">How you do anything is how you do everything.</a></p>
+      </main>
+    </div>
+  </body>
+</html>
